@@ -8,11 +8,13 @@
 import Foundation
 
 class AuthenticationManager: ObservableObject {
+    
+    static let shared = AuthenticationManager()
         
     @Published var token: String?
     @Published var patientID: String?
     
-    init() {
+    private init() {
         self.token = KeychainHelper.get(for: "app-vollmed-token")
         self.patientID = KeychainHelper.get(for: "app-vollmed-patient-id")
     }

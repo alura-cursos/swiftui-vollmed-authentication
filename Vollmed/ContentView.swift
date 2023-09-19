@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @ObservedObject var authManager = AuthenticationManager()
+    @ObservedObject var authManager = AuthenticationManager.shared
     
     var body: some View {
         

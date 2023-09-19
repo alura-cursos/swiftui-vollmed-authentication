@@ -13,7 +13,7 @@ struct SignInView: View {
     @State private var password: String = ""
     @State private var showAlert: Bool = false
     
-    @ObservedObject var authManager = AuthenticationManager()
+    var authManager = AuthenticationManager.shared
     
     let service = WebService()
     

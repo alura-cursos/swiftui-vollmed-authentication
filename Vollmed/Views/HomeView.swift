@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     let service = WebService()
+    var authManager = AuthenticationManager.shared
     
     @State private var specialists: [Specialist] = []
     
@@ -27,8 +28,8 @@ struct HomeView: View {
         do {
             let logoutSuccessful = try await service.logoutPatient()
             if logoutSuccessful {
-                KeychainHelper.remove(for: "app-vollmed-token")
-                KeychainHelper.remove(for: "app-vollmed-patient-id")
+                authManager.removeToken()
+                authManager.removePatientID()
             }
         } catch {
             print("Ocorreu um erro no logout: \(error)")
