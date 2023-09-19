@@ -19,7 +19,7 @@ struct WebService {
             return false
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = KeychainHelper.get(for: "app-vollmed-token") else {
             print("Token não informado!")
             return false
         }
@@ -91,7 +91,7 @@ struct WebService {
             return false
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = KeychainHelper.get(for: "app-vollmed-token") else {
             print("Token não informado!")
             return false
         }
@@ -125,7 +125,7 @@ struct WebService {
             return nil
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = KeychainHelper.get(for: "app-vollmed-token") else {
             print("Token não informado!")
             return nil
         }
@@ -155,7 +155,7 @@ struct WebService {
             return nil
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = KeychainHelper.get(for: "app-vollmed-token") else {
             print("Token não informado!")
             return nil
         }
@@ -181,7 +181,7 @@ struct WebService {
             return nil
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = KeychainHelper.get(for: "app-vollmed-token") else {
             print("Token não informado!")
             return nil
         }

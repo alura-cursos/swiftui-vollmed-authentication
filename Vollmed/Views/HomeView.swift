@@ -27,8 +27,8 @@ struct HomeView: View {
         do {
             let logoutSuccessful = try await service.logoutPatient()
             if logoutSuccessful {
-                UserDefaultsHelper.remove(for: "token")
-                UserDefaultsHelper.remove(for: "patient-id")
+                KeychainHelper.remove(for: "app-vollmed-token")
+                KeychainHelper.remove(for: "app-vollmed-patient-id")
             }
         } catch {
             print("Ocorreu um erro no logout: \(error)")

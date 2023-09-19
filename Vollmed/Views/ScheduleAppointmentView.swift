@@ -43,7 +43,7 @@ struct ScheduleAppointmentView: View {
     }
     
     func scheduleAppointment() async {
-        guard let patientID = UserDefaultsHelper.get(for: "patient-id") else {
+        guard let patientID = KeychainHelper.get(for: "app-vollmed-patient-id") else {
             return
         }
         do {
