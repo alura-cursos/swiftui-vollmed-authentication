@@ -25,6 +25,7 @@
 		488A6A1D2AB91386003A2CAD /* CancelAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A1C2AB91386003A2CAD /* CancelAppointmentView.swift */; };
 		488A6A1F2AB91FF1003A2CAD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A1E2AB91FF1003A2CAD /* SignInView.swift */; };
 		488A6A212AB920F1003A2CAD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A202AB920F1003A2CAD /* SignUpView.swift */; };
+		488A6A232AB92BAE003A2CAD /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A222AB92BAE003A2CAD /* Patient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		488A6A1C2AB91386003A2CAD /* CancelAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAppointmentView.swift; sourceTree = "<group>"; };
 		488A6A1E2AB91FF1003A2CAD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		488A6A202AB920F1003A2CAD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		488A6A222AB92BAE003A2CAD /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				484BEEFC2AB0F5750033C07A /* Specialist.swift */,
 				488A6A162AB8FBCE003A2CAD /* ScheduleAppointment.swift */,
 				488A6A1A2AB90ED6003A2CAD /* Appointment.swift */,
+				488A6A222AB92BAE003A2CAD /* Patient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				488A6A232AB92BAE003A2CAD /* Patient.swift in Sources */,
 				488A6A1B2AB90ED6003A2CAD /* Appointment.swift in Sources */,
 				488A6A132AB8FB3D003A2CAD /* Date+.swift in Sources */,
 				488A6A172AB8FBCE003A2CAD /* ScheduleAppointment.swift in Sources */,
