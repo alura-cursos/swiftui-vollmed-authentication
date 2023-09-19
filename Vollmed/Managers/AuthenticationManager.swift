@@ -7,9 +7,10 @@
 
 import Foundation
 
-class AuthenticationManager {
-    var token: String?
-    var patientID: String?
+class AuthenticationManager: ObservableObject {
+        
+    @Published var token: String?
+    @Published var patientID: String?
     
     init() {
         self.token = KeychainHelper.get(for: "app-vollmed-token")
