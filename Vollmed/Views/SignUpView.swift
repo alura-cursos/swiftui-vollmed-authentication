@@ -13,8 +13,16 @@ struct SignUpView: View {
     @State private var email: String = ""
     @State private var cpf: String = ""
     @State private var phoneNumber: String = ""
-    @State private var healthPlan: String = ""
+    @State private var healthPlan: String
     @State private var password: String = ""
+    
+    let healthPlans: [String] = [
+        "Amil", "Unimed", "Bradesco Saúde", "SulAmérica", "Hapvida", "Notredame Intermédica", "São Francisco Saúde", "Golden Cross", "Medial Saúde", "América Saúde", "Outro"
+    ]
+    
+    init() {
+        self.healthPlan = healthPlans[0]
+    }
     
     var body: some View {
         ScrollView(showsIndicators: false) {
@@ -90,6 +98,17 @@ struct SignUpView: View {
                     .padding(14)
                     .background(Color.gray.opacity(0.25))
                     .cornerRadius(14.0)
+                
+                Text("Selecione o seu plano de saúde")
+                    .font(.title3)
+                    .bold()
+                    .foregroundStyle(.accent)
+                
+                Picker("Plano de saúde", selection: $healthPlan) {
+                    ForEach(healthPlans, id: \.self) { healthPlan in
+                        Text(healthPlan)
+                    }
+                }
                 
                 Button(action: {
                     //
