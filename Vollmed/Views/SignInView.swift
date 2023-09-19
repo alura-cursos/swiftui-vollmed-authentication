@@ -52,6 +52,17 @@ struct SignInView: View {
                 .background(Color.gray.opacity(0.25))
                 .cornerRadius(14.0)
             
+            Button(action: {}, label: {
+                ButtonView(text: "Entrar")
+            })
+            
+            NavigationLink {
+                SignUpView()
+            } label: {
+                Text("Ainda não possui uma conta? Cadastre-se.")
+                    .bold()
+                    .frame(maxWidth: .infinity, alignment: .center)
+            }
         }
         .padding()
     }

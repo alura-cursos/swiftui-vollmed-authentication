@@ -24,6 +24,7 @@
 		488A6A1B2AB90ED6003A2CAD /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A1A2AB90ED6003A2CAD /* Appointment.swift */; };
 		488A6A1D2AB91386003A2CAD /* CancelAppointmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A1C2AB91386003A2CAD /* CancelAppointmentView.swift */; };
 		488A6A1F2AB91FF1003A2CAD /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A1E2AB91FF1003A2CAD /* SignInView.swift */; };
+		488A6A212AB920F1003A2CAD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A202AB920F1003A2CAD /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		488A6A1A2AB90ED6003A2CAD /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		488A6A1C2AB91386003A2CAD /* CancelAppointmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelAppointmentView.swift; sourceTree = "<group>"; };
 		488A6A1E2AB91FF1003A2CAD /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		488A6A202AB920F1003A2CAD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				488A6A182AB90DD4003A2CAD /* MyAppointmentsView.swift */,
 				488A6A1C2AB91386003A2CAD /* CancelAppointmentView.swift */,
 				488A6A1E2AB91FF1003A2CAD /* SignInView.swift */,
+				488A6A202AB920F1003A2CAD /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				488A6A1F2AB91FF1003A2CAD /* SignInView.swift in Sources */,
 				484BEF032AB0F7080033C07A /* SpecialistCardView.swift in Sources */,
 				484BEEFF2AB0F59D0033C07A /* WebService.swift in Sources */,
+				488A6A212AB920F1003A2CAD /* SignUpView.swift in Sources */,
 				48539DED2AB0F47C005BD7C9 /* VollmedApp.swift in Sources */,
 				488A6A192AB90DD4003A2CAD /* MyAppointmentsView.swift in Sources */,
 				488A6A102AB8F9AA003A2CAD /* ScheduleAppointmentView.swift in Sources */,
