@@ -23,6 +23,18 @@ struct HomeView: View {
         }
     }
     
+    func logout() async {
+        do {
+            let logoutSuccessful = try await service.logoutPatient()
+            if logoutSuccessful {
+                UserDefaultsHelper.remove(for: "token")
+                UserDefaultsHelper.remove(for: "patient-id")
+            }
+        } catch {
+            print("Ocorreu um erro no logout: \(error)")
+        }
+    }
+    
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack {
@@ -52,6 +64,20 @@ struct HomeView: View {
         .onAppear {
             Task {
                 await getSpecialists()
+            }
+        }
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                Button(action: {
+                    Task {
+                        await logout()
+                    }
+                }, label: {
+                    HStack(spacing: 2) {
+                        Image(systemName: "rectangle.portrait.and.arrow.right")
+                        Text("Logout")
+                    }
+                })
             }
         }
     }
