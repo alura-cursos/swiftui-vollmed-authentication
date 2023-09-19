@@ -27,6 +27,7 @@
 		488A6A212AB920F1003A2CAD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A202AB920F1003A2CAD /* SignUpView.swift */; };
 		488A6A232AB92BAE003A2CAD /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A222AB92BAE003A2CAD /* Patient.swift */; };
 		488A6A252AB92ED9003A2CAD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A242AB92ED9003A2CAD /* Login.swift */; };
+		488A6A272AB93065003A2CAD /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A262AB93065003A2CAD /* UserDefaultsHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		488A6A202AB920F1003A2CAD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		488A6A222AB92BAE003A2CAD /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		488A6A242AB92ED9003A2CAD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		488A6A262AB93065003A2CAD /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				484BEEFE2AB0F59D0033C07A /* WebService.swift */,
+				488A6A262AB93065003A2CAD /* UserDefaultsHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				484BEF052AB0F7970033C07A /* HomeView.swift in Sources */,
 				488A6A1D2AB91386003A2CAD /* CancelAppointmentView.swift in Sources */,
 				484BEEFD2AB0F5750033C07A /* Specialist.swift in Sources */,
+				488A6A272AB93065003A2CAD /* UserDefaultsHelper.swift in Sources */,
 				484BEF012AB0F6090033C07A /* ButtonView.swift in Sources */,
 				488A6A1F2AB91FF1003A2CAD /* SignInView.swift in Sources */,
 				484BEF032AB0F7080033C07A /* SpecialistCardView.swift in Sources */,
