@@ -19,6 +19,7 @@ struct SignUpView: View {
     @State private var password: String = ""
     @State private var showAlert: Bool = false
     @State private var isPatientRegistered: Bool = false
+    @State private var navigateToSignInView: Bool = false
     
     let healthPlans: [String] = [
         "Amil", "Unimed", "Bradesco Saúde", "SulAmérica", "Hapvida", "Notredame Intermédica", "São Francisco Saúde", "Golden Cross", "Medial Saúde", "América Saúde", "Outro"
@@ -151,7 +152,7 @@ struct SignUpView: View {
         .padding()
         .alert(isPatientRegistered ? "Sucesso!" : "Ops, algo deu errado!", isPresented: $showAlert, presenting: $isPatientRegistered) { _ in
             Button(action: {
-                //
+                navigateToSignInView = true
             }, label: {
                 Text("Ok")
             })
@@ -161,6 +162,9 @@ struct SignUpView: View {
             } else {
                 Text("Houve um erro ao cadastrar o paciente. Por favor tente novamente.")
             }
+        }
+        .navigationDestination(isPresented: $navigateToSignInView) {
+            SignInView()
         }
     }
 }
