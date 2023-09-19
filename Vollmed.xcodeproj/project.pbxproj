@@ -28,6 +28,8 @@
 		488A6A232AB92BAE003A2CAD /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A222AB92BAE003A2CAD /* Patient.swift */; };
 		488A6A252AB92ED9003A2CAD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A242AB92ED9003A2CAD /* Login.swift */; };
 		488A6A272AB93065003A2CAD /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A262AB93065003A2CAD /* UserDefaultsHelper.swift */; };
+		488A6A2B2AB93472003A2CAD /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A2A2AB93472003A2CAD /* KeychainHelper.swift */; };
+		488A6A2E2AB93514003A2CAD /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488A6A2D2AB93514003A2CAD /* AuthenticationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,8 @@
 		488A6A222AB92BAE003A2CAD /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		488A6A242AB92ED9003A2CAD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		488A6A262AB93065003A2CAD /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		488A6A2A2AB93472003A2CAD /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		488A6A2D2AB93514003A2CAD /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			children = (
 				484BEEFE2AB0F59D0033C07A /* WebService.swift */,
 				488A6A262AB93065003A2CAD /* UserDefaultsHelper.swift */,
+				488A6A2A2AB93472003A2CAD /* KeychainHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		48539DEB2AB0F47C005BD7C9 /* Vollmed */ = {
 			isa = PBXGroup;
 			children = (
+				488A6A2C2AB9350C003A2CAD /* Managers */,
 				488A6A112AB8FB35003A2CAD /* Extensions */,
 				484BEEFB2AB0F56C0033C07A /* Services */,
 				484BEEFA2AB0F5680033C07A /* Models */,
@@ -156,6 +162,14 @@
 				488A6A142AB8FB86003A2CAD /* String+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		488A6A2C2AB9350C003A2CAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				488A6A2D2AB93514003A2CAD /* AuthenticationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,11 +245,13 @@
 				488A6A232AB92BAE003A2CAD /* Patient.swift in Sources */,
 				488A6A1B2AB90ED6003A2CAD /* Appointment.swift in Sources */,
 				488A6A132AB8FB3D003A2CAD /* Date+.swift in Sources */,
+				488A6A2B2AB93472003A2CAD /* KeychainHelper.swift in Sources */,
 				488A6A172AB8FBCE003A2CAD /* ScheduleAppointment.swift in Sources */,
 				48539DEF2AB0F47C005BD7C9 /* ContentView.swift in Sources */,
 				488A6A152AB8FB86003A2CAD /* String+.swift in Sources */,
 				484BEF052AB0F7970033C07A /* HomeView.swift in Sources */,
 				488A6A1D2AB91386003A2CAD /* CancelAppointmentView.swift in Sources */,
+				488A6A2E2AB93514003A2CAD /* AuthenticationManager.swift in Sources */,
 				484BEEFD2AB0F5750033C07A /* Specialist.swift in Sources */,
 				488A6A272AB93065003A2CAD /* UserDefaultsHelper.swift in Sources */,
 				484BEF012AB0F6090033C07A /* ButtonView.swift in Sources */,
